@@ -8,15 +8,13 @@ namespace Menu
 {
     public class MenuManager : MonoBehaviour
     {
-        /*[SerializeField] private Text _countText;*/
-    
         [SerializeField] private Button _playButton;
         [SerializeField] private Button _settingsButton;
         [SerializeField] private Button _infoButton;
         [SerializeField] private Button _exitButton;
 
         [SerializeField] private Canvas _exitPopupPrefab;
-        [SerializeField] private Canvas _playerCountCanvasCanvas;
+        [SerializeField] private Canvas _playerCountCanvasPrefab;
 
         private void Awake()
         {
@@ -30,63 +28,13 @@ namespace Menu
             Screen.SetResolution(1920, 1080, true);
         }
 
-        private void Update()
-        {
-            /*_countText.text = Convert.ToString(GameData.playerCount);*/
-        }
-
         private void ExitGame()
         {
             Instantiate(_exitPopupPrefab);
         }
         public void Play()
         {
-            /*_buttons[0].GetComponent<AudioSource>().Play();
-            _buttons[0].GetComponent<AudioSource>().volume = GameData.SFXVolume;
-            for (int i = 0; i < 4; i++)
-            {
-                _buttons[i].enabled=false;
-            }
-            _playerCountCanvas.enabled = true;*/
-        }
-        public void PlusCount()
-        {
-            /*if (GameData.playerCount < 6)
-            {
-                _buttons[7].GetComponent<AudioSource>().Play();
-                _buttons[7].GetComponent<AudioSource>().volume = GameData.SFXVolume;
-                GameData.playerCount++;
-            }*/
-        }
-        public void MinusCount()
-        {
-            /*if (GameData.playerCount > 2)
-            {
-                _buttons[6].GetComponent<AudioSource>().Play();
-                _buttons[6].GetComponent<AudioSource>().volume = GameData.SFXVolume;
-                GameData.playerCount--;
-            }*/
-        }
-        public void Skins()
-        {
-            /*_buttons[5].GetComponent<AudioSource>().Play();
-            _buttons[5].GetComponent<AudioSource>().volume = GameData.SFXVolume;
-            StartCoroutine(GoToSkins());*/
-        }
-        /*IEnumerator GoToSkins()
-        {
-            yield return new WaitForSeconds(0.1f);
-            SceneManager.LoadScene("SkinsOption");
-        }*/
-        public void ExitPlayMenu()
-        {
-            /*_buttons[4].GetComponent<AudioSource>().Play();
-            _buttons[4].GetComponent<AudioSource>().volume = GameData.SFXVolume;
-            _playerCountCanvas.enabled = false;
-            for (int i = 0; i < 4; i++)
-            {
-                _buttons[i].enabled = true;
-            }*/
+            Instantiate(_playerCountCanvasPrefab);
         }
         public void Info()
         {

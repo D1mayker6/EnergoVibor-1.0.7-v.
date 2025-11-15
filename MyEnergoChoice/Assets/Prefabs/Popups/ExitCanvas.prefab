@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 8285606406309087328}
   - component: {fileID: 7742222940688513980}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: RaycastPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

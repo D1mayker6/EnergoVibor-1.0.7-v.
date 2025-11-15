@@ -23,7 +23,7 @@ namespace Menu.Popups
 
         private void FalseExit()
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
         private void OnDestroy()

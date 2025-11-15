@@ -835,7 +835,7 @@ MonoBehaviour:
   _infoButton: {fileID: 7933172855562711209}
   _exitButton: {fileID: 7933172855473896668}
   _exitPopupPrefab: {fileID: 5902879409731216176, guid: f225d875902432b4e89a466f25413517, type: 3}
-  _playerCountCanvasCanvas: {fileID: 5738613386132975038, guid: 85eaf76c877a44e41b6b809263c5c50e, type: 3}
+  _playerCountCanvasPrefab: {fileID: 5738613386132975038, guid: 85eaf76c877a44e41b6b809263c5c50e, type: 3}
 --- !u!82 &1078904068
 AudioSource:
   m_ObjectHideFlags: 0
