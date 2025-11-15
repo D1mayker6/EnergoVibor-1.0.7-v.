@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    private static AudioManager instance;
+    public static AudioManager Instance;
     private AudioSource audioSource;
     [SerializeField] AudioClip backgroundMusic1;
     [SerializeField] AudioClip backgroundMusic2;
@@ -18,9 +18,9 @@ public class AudioManager : MonoBehaviour
     void Awake()
     {
         
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
             InitializeAudio();
             SceneManager.sceneLoaded += OnSceneLoaded;
