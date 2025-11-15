@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1537720260122174163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5037044490281163161}
+  - component: {fileID: 7265863833525713050}
+  m_Layer: 0
+  m_Name: PauseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5037044490281163161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537720260122174163}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.6920977, y: 4.2210717, z: -0.97457653}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7265863833525713050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537720260122174163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730dca7debd49a940a620492eaee7af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseCanvas: {fileID: 0}
+  map: {fileID: 0}
+  cam: {fileID: 0}
+  bluePole: {fileID: -6678772502401276881, guid: 3d024afc922bb8941b6aae05487cae1e, type: 3}
+  bluecard: {fileID: -4977535008287463882, guid: 1ed1e947a66c07e4ab04f91e1c365f56, type: 3}
+  grayPole: {fileID: 5541485348120553105, guid: d34718ed21def4846927630017855740, type: 3}
+  graycard: {fileID: 3133284699054490938, guid: 46448e5a1fa629a4e9a46218d8798950, type: 3}
+  goldcard: {fileID: 7706901400535193336, guid: 7aac826b287ed394aa8582251f20969a, type: 3}
+  goldPole: {fileID: 960748722047577564, guid: 2cb2cdccfbd8a2e41885f451caa6dc73, type: 3}
+  rgPole: {fileID: 7204101765263868012, guid: 794480f6d6400a147848d955ea819c82, type: 3}
+  rgcard: {fileID: 555259370805211480, guid: b609bc90637d2f449a7f8d3e092d7099, type: 3}
+  pinkpole: {fileID: 4498647174915309235, guid: 1b0ad4c2a2b9e8542813a720246b06cb, type: 3}
+  betCheck: {fileID: 1317273989555428711, guid: ba82a8ee5dd92a745944efdf48c6a52d, type: 3}
+  playerHUDManager: {fileID: 4405301323437346713, guid: 5439a52d6c520c14b8ce113c96064a70, type: 3}
+  AnimBlueCard: {fileID: 0}
+  AnimGrayCard: {fileID: 0}
+  AnimGoldCard: {fileID: 0}
+  AnimRGCard: {fileID: 0}
